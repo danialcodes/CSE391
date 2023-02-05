@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto-mono', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #DDFFE7;
 }
 
@@ -69,7 +69,7 @@ main {
 
 
 section {
-    /* border: 1px solid black; */
+
     padding: 5px 10px;
     margin-bottom: 60px;
     background-image: linear-gradient(#37BEB0,#A4E5E0);
