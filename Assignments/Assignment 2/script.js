@@ -211,16 +211,7 @@ function stripBlank(){
         newmagicinput += magicline.trim() + "\n";
     })
 
-    // magicArray = magicArray.filter(item => item);
-    // for (var i = 0; i < magicArray.length; i++) {
-    //     if(i == magicArray.length-1){
-    //         newmagicinput += magicArray[i];
-    //     }
-    //     else{
-    //         newmagicinput += magicArray[i]+"\n";
-    //     }
-    // }
-    console.log(newmagicinput)
+
     document.getElementById("magic-input").value = newmagicinput.slice(0,newmagicinput.length-1);
     console.log("Stripped Blank Lines!")
 }
