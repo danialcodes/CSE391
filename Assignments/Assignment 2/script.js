@@ -229,10 +229,10 @@ function addLineNo(){
     var newmagicinput = "";
     for (var i = 0; i < magicArray.length; i++) {
         if(i == magicArray.length-1){
-            newmagicinput += (i+1) + ") " + magicArray[i];
+            newmagicinput += (i+1) + ". " + magicArray[i];
         }
         else{
-            newmagicinput += (i+1) + ") " + magicArray[i] + "\n";
+            newmagicinput += (i+1) + ". " + magicArray[i] + "\n";
         }
     }
     document.getElementById("magic-input").value = newmagicinput;
