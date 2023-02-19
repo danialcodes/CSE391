@@ -24,7 +24,7 @@ function fetchQuote() {
     document.getElementById("quote_text").innerHTML = '"' + quotes[random_quote] + '"';
     document.getElementById("quote_author").innerHTML = quotes_author[random_quote];
 
-    document.getElementById("quotes").style.backgroundColor = "#aebab1";
+    document.getElementById("quotes").style.backgroundColor = "#22c2b4";
     document.getElementById("quotes").style.borderColor = "#5d767b";
     document.getElementById("quote_text").style.color = "#fff";
     document.getElementById("quote_author").style.color = "#fff";
