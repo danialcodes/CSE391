@@ -220,6 +220,7 @@ function stripBlank(){
     //         newmagicinput += magicArray[i]+"\n";
     //     }
     // }
+    console.log(newmagicinput)
     document.getElementById("magic-input").value = newmagicinput;
     console.log("Stripped Blank Lines!")
 }
