@@ -221,7 +221,7 @@ function stripBlank(){
     //     }
     // }
     console.log(newmagicinput)
-    document.getElementById("magic-input").value = newmagicinput;
+    document.getElementById("magic-input").value = newmagicinput.slice(0,newmagicinput.length-1);
     console.log("Stripped Blank Lines!")
 }
 function addLineNo(){
