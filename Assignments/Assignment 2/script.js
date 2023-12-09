@@ -211,16 +211,8 @@ function stripBlank(){
         newmagicinput += magicline.trim() + "\n";
     })
 
-    // magicArray = magicArray.filter(item => item);
-    // for (var i = 0; i < magicArray.length; i++) {
-    //     if(i == magicArray.length-1){
-    //         newmagicinput += magicArray[i];
-    //     }
-    //     else{
-    //         newmagicinput += magicArray[i]+"\n";
-    //     }
-    // }
-    document.getElementById("magic-input").value = newmagicinput;
+
+    document.getElementById("magic-input").value = newmagicinput.slice(0,newmagicinput.length-1);
     console.log("Stripped Blank Lines!")
 }
 function addLineNo(){
@@ -229,10 +221,10 @@ function addLineNo(){
     var newmagicinput = "";
     for (var i = 0; i < magicArray.length; i++) {
         if(i == magicArray.length-1){
-            newmagicinput += (i+1) + ") " + magicArray[i];
+            newmagicinput += (i+1) + ". " + magicArray[i];
         }
         else{
-            newmagicinput += (i+1) + ") " + magicArray[i] + "\n";
+            newmagicinput += (i+1) + ". " + magicArray[i] + "\n";
         }
     }
     document.getElementById("magic-input").value = newmagicinput;
